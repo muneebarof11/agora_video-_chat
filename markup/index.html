@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- resposive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agora Video Chat</title>
+
+    <!-- the above three meta tags *must* come in the head; any other head content comes *after* these tags -->
+    <meta name="descriptiom" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- link -->
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+
+<body>
+    <div class="At__wapper">
+        <section class="At___seflscetion">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="setting__div">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <a href="/conferncehal.html">
+                                        <img src="images/roundbackarrow.svg" alt="arrow" />
+                                    </a>
+                                    <h1>How to love yourself</h1>
+                                </div>
+                                <div class="dropdown">
+                                    <a href="" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="images/setting.svg" alt="setting" />
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="invite__div">
+                            <div class="d-flex justify-content-between mt-5 align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <figure class="mb-0">
+                                        <img src="images/record.svg" alt="record" />
+                                    </figure>
+                                    <p>Record <span id="time">00:34:41</span></p>
+                                </div>
+                                <a href="">
+                                    Invite people
+                                </a>
+                            </div>
+                        </div>
+                        <div class="At___vedioCalling">
+                            <div class="d-flex justify-content-end text-end">
+                                <div class="col-lg-12 actionparticipants">
+                                    <figure>
+                                        <img src="images/calingimg.svg" alt="img" class="calingimg" />
+                                        <p>James</p>
+                                        <div class="muting blue" id="muting">
+                                            <span class="iconify mic-fill d-none" data-icon="bi:mic-fill"></span>
+                                            <span class="iconify mic-mute" data-icon="bi:mic-mute-fill"></span>
+                                        </div>
+                                    </figure>
+                                    <figure>
+                                        <img src="images/callingimg1.svg" alt="img" class="calingimg" />
+                                        <p>Kathy </p>
+                                        <img src="images/specker.svg" alt="mute" class="specker" />
+                                    </figure>
+                                    <figure>
+                                        <img src="images/callingimg2.svg" alt="img" class="calingimg" />
+                                        <p>Erin</p>
+                                        <div class="muting red" id="muting__red">
+                                            <span class="iconify mic-fill d-none" data-icon="bi:mic-fill"></span>
+                                            <span class="iconify mic-mute" data-icon="bi:mic-mute-fill"></span>
+                                        </div>
+                                    </figure>
+                                    <figure>
+                                        <img src="images/callinging3.svg" alt="img" class="calingimg" />
+                                        <p>Kevin</p>
+                                        <div class="muting red" id="muting__redmic">
+                                            <span class="iconify mic-fill d-none" data-icon="bi:mic-fill"></span>
+                                            <span class="iconify mic-mute" data-icon="bi:mic-mute-fill"></span>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-lg-4">
+                                <div class="speaker___div">
+                                    <div class="volume__icon" id="volume-icon">
+                                        <span class="iconify volume__icon  d-none"
+                                            data-icon="akar-icons:sound-on"></span>
+                                        <span class="iconify volume__mute " data-icon="akar-icons:sound-off"></span>
+                                    </div>
+                                    <div class="Volume___rang">
+                                        <input id="volume-slider" class="range" type="range" name "" value="0" min="0"
+                                            max="10" />
+                                    </div>
+                                </div>
+                                <p class="Volume__text">Volume</p>
+
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="d-flex  text-center mr-auto">
+                                    <div class="Mic">
+                                        <div class="micimg mic-mute-fill" id="mic_mute">
+                                            <span class="iconify mic-fill" data-icon="bi:mic-fill"></span>
+                                            <span class="iconify mic-mute d-none" data-icon="bi:mic-mute-fill"></span>
+                                        </div>
+                                        <p>Mic</p>
+                                    </div>
+
+                                    <div class="Mic">
+                                        <div class="micimg camera-video" id="camera">
+                                            <span class="iconify mic-fill" data-icon="bi:camera-video"></span>
+                                            <span class="iconify mic-mute d-none"
+                                                data-icon="bi:camera-video-off"></span>
+                                        </div>
+                                        <p>Camera</p>
+                                    </div>
+                                    <figure class="hand__div mb-0">
+                                        <img src="images/hand.svg" alt="hand" />
+                                        <p>Hand Raise</p>
+                                    </figure>
+                                    <figure class="hand__div mb-0">
+                                        <img src="images/share.svg" alt="share" />
+                                        <p>Share</p>
+                                    </figure>
+                                    <div class="logout__div">
+                                        <figure class="mb-0">
+                                            <img src="images/logout.svg" alt="logout" />
+                                            <p>Leave</p>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="massage__section">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link Messages active" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">Messages</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link Participants" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">Participants</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+                                    <div class="massage___text">
+                                        Messages
+                                    </div>
+                                    <div class="overflow__div">
+                                        <div class="d-flex">
+                                            <figure class="d-flex align-items-end mb-0">
+                                                <img src="images/msgprofile.svg" alt="prifile" />
+                                            </figure>
+                                            <div class="Stanely James__text">
+                                                <h6>Stanely</h6>
+                                                <p>Lorem ipsum dolor sit amet consectetur adi
+                                                    scing elit, sed do eiusmod tempor dolor sit amet consectetur adim
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="time pm__text">04:20 pm</span>
+                                        <div class="d-flex mt-4">
+                                            <figure class="d-flex align-items-end mb-0">
+                                                <img src="images/msgprofile.svg" alt="prifile" />
+                                            </figure>
+                                            <div class="Stanely James__text">
+                                                <h6>James</h6>
+                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                                    accusantium soloeaz doloremque</p>
+                                            </div>
+                                        </div>
+                                        <span class="time pm__text">04:23 pm</span>
+                                        <div class="d-flex mt-4">
+                                            <div class="Stanely you__text">
+                                                <h6>You</h6>
+                                                <p>Duis aute irure dolor in reprehenderit in pary voluptate velit esse
+                                                    cillum dolore</p>
+                                            </div>
+                                            <figure class="d-flex align-items-end mb-0">
+                                                <img src="images/msgprofile.svg" alt="prifile" />
+                                            </figure>
+                                        </div>
+                                        <span class="time pm__text1">04:23 pm</span>
+                                        <div id="message-bubble" class="d-flex mt-4">
+                                            <figure class="d-flex align-items-end mb-0">
+                                                <img src="images/msgprofile.svg" alt="prifile" class="btnSearch" />
+                                            </figure>
+                                            <div class="Stanely James__text">
+                                                <h6>Staphine</h6>
+                                                <!-- <p>Lorem ipsum dolor sit amet consectetur adi
+                                                    scing elit, sed do eiusmod tempor.</p> -->
+                                                <p id="demo"></p>
+                                            </div>
+                                        </div>
+                                        <span class="time pm__text">04:23 pm</span>
+                                    </div>
+                                    <div class="input-group mb-3 mt-4">
+                                        <input type="text" class="form-control email___input" id="myText"
+                                            placeholder="Enter your message here">
+                                        <div class="carbon_notification">
+                                            <figure class="mb-0">
+                                                <img src="images/carbon_send-alt-filled.svg" alt="carbon_notification"
+                                                    onsubmit="submit()" />
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">
+                                    <div class="massage___text">
+                                        Participants
+                                    </div>
+                                    <div class="Participants__div">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0">
+                                                <img src="images/profileimg.png" alt="profile" />
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <h6>James</h6>
+                                                <p>At work</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div class="flex-shrink-0">
+                                                <img src="images/profileimg.png" alt="profile" />
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <h6>Kathy</h6>
+                                                <p>At work</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div class="flex-shrink-0">
+                                                <img src="images/profileimg.png" alt="profile" />
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <h6>Erin</h6>
+                                                <p>At work</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center mt-3">
+                                            <div class="flex-shrink-0">
+                                                <img src="images/profileimg.png" alt="profile" />
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <h6>Kevin</h6>
+                                                <p>At work</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+
+    <script>
+        function startTimer(duration, display) {
+            var timer = duration, hours, minutes, seconds;
+            setInterval(function () {
+                hours = parseInt(timer / 60, 10);
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = hours + ":" + minutes + ":" + seconds;
+
+                if (++timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            var infinited = 00 * 50,
+                display = document.querySelector('#time');
+            startTimer(infinited, display);
+        };
+
+    </script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script type="text/javascript" src="js/notify.js"></script> -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script>
+        // program to display numbers from 1 to 5
+
+        $('document').ready(function () {
+            const messageField = $('#myText');
+            const messageBubble = $('#message-bubble');
+
+            messageBubble.removeClass('d-flex');
+            messageBubble.addClass('d-none')
+
+            messageField.on('input', (e) => {
+                const text = (e.target.value)
+                if (text.length > 0) {
+                    const textElement = messageBubble.find('p');
+                    textElement.text(text)
+                    messageBubble.addClass('d-flex');
+                    messageBubble.removeClass('d-none')
+                }
+                else {
+                    messageBubble.removeClass('d-flex');
+                    messageBubble.addClass('d-none')
+                };
+            })
+        })
+    </script>
+    <!-- <script>
+        const notify = new Notify();
+        const noty_3 = document.querySelector("#camera");
+        noty_3.addEventListener("click", () => {
+            notify.render({
+                sound: true
+            });
+        });
+    </script> -->
+</body>
+
+</html>
